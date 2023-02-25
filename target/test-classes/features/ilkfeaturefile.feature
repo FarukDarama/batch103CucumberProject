@@ -1,16 +1,17 @@
 @google_search
 Feature:ilk feature file
+  Background: Google_sayfasina_git
+    Given kullanıcı google'a gider
 
   @iphone
   Scenario:TC01_google_iphone_arama
-  Given kullanıcı google'a gider
+
   When kullanıcı iphone icin arama yapar
-  Then sonuclarda iphone oldugunu dogrular
+  Then sonuclarin "iphone" icerdigini dogrula
   And  close the application
 
   @tesla
   Scenario: TC02_google_tesla_arama
-  Given kullanıcı google'a gider
   When kullanıcı tesla için arama yapar
   Then sonuclarda tesla oldugunu dogrular
   Then close the application
@@ -29,9 +30,15 @@ Feature:ilk feature file
   #  8. And, When -> Genelde ara adımlarda bağlaç olarak kullanılır.
   #  NOTE: Teknik olarak istenilen kelime istenilen stepte kullanılabilir,
   #        ama anlam karmaşası olmaması için bu adımlar takip edilir.
-  #   9.Belirli seneryoları calsıtımak icin cucumber tagler kullanılır
-  # tagler Features,Scenario,
-  #  1: jedes feature file, muss mit der "Feature" (Wort) anfangen
+  #  9. Belirli Scenerio ları çalıştırmak için cucumber tags ler kullanılır
+  #  tag ler Feature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir
+  #  10. Background: Her bir senaryo kelimesinden önce tek bir sefer çalışır
+  #  11. dryRun=false -> dryRun yokmus gibi normal sekilde calisir. Yani tum adimlari tek tetk browserda acar.
+  #      dryRun=true  -> Yeni bir STEP(adim) eklendiginde sadece tanimlanmamis step definitions lari olusturmak icin kullanilir
+  #      kullanilma sebebi zamandan tasarrufdur.
+
+
+ # #  1: jedes feature file, muss mit der "Feature" (Wort) anfangen
 ## 2: bei jedes einzelne fail kann nur ein Feature verwendet werden
 ## 3: um eine (Test Case) zu erstellen muss das Wort Scenario angewendet
 ## 4: kann mehr als eine Sceanario : verwendet werden

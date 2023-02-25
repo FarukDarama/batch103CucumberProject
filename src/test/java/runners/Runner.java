@@ -8,12 +8,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",//features folder path
         glue = "stepdefinitions",//stepdefinitions path
-        tags = "@iphone or @tesla"
+        tags = "@scenario_outline_1",
+        dryRun = false
+        //hizli bir sekilde hepsini tara. tanimlanmamis adimi ver SD dosyasina ekle tekrar TC'leri calistirmak istedimiz zaman da false yap
+
 )
 public class Runner {
 
 
 }
-//Bu sınıf test caseleri run etmek için kullanılır
-//ve konfigurasyonlar için kullanılır
-//Runner classi features file ile step
+//Bu sınıf test caseleri run  dryRun
