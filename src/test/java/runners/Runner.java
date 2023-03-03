@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
         monochrome=true,
         features = "./src/test/resources/features",//features folder path
         glue = {"stepdefinitions","hooks"},//stepdefinitions path
-        tags = "@data_tables",
-        dryRun = false
+        tags = "@excel_automation",
+        dryRun = true
 
 
 )
