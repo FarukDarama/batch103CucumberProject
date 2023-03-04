@@ -1,4 +1,4 @@
-@parametre
+@smoke
 Feature: arama_feature
   Background: googlea_git
     Given kullanici google gider

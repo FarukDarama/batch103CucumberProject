@@ -1,4 +1,4 @@
-@scenario_outline_1
+@regression
 Feature: arama_feature_2
   Background: googlea_git
     Given kullanici google gider
