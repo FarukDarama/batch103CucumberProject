@@ -1,8 +1,9 @@
-@scenario_outline_1
+@failed_scenario
 Feature: arama_feature_2
   Background: googlea_git
     Given kullanici google gider
 
+  @regression
     Scenario Outline: arama_test
       When kullanici "<product>" için arama yapar
       Then sonuclarin "<product>" icerdigini dogrula
