@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="88.811" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="excel_login_feature" name="TC01_musteri_giris_testi" time="67.351">
+<testsuite name="Cucumber" time="84.938" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="excel_login_feature" name="TC01_musteri_giris_testi" time="65.877">
 <system-out><![CDATA[
 Given kullanici "customer_info" bilgileri ile giris yapar...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="excel_login_feature" name="TC02_musteri_giris_testi" time="20.928">
+<testcase classname="excel_login_feature" name="TC02_musteri_giris_testi" time="18.611">
 <system-out><![CDATA[
 Given kullanici "admin_info" bilgileri ile giris yapar......................passed
 ]]></system-out>
