@@ -19,7 +19,7 @@ Feature: personel_olusturma
 
     Examples: personel_bilgileri
       | firstname | lastname | positions    | office     | extension | start_date | salary |
-      | john      | walker   | SDET         | ISTANBUL   | 345       | 2023-03-01 | 100000 | mvn
+      | john      | walker   | SDET         | ISTANBUL   | 345       | 2023-03-01 | 100000 |
       | zeynep    | black    | developer    | ankara     | 3412      | 2023-03-04 | 800000 |
       | ali       | tez      | BA           | Tokat      | 678       | 2023-03-08 | 870000 |
       | feyza     | sar      | PO           | Izmir      | 7456      | 2023-03-03 | 860000 |
